@@ -16,10 +16,14 @@
     "split": {
         "enabled": true,
         "transport": {
-            "protocol": "serial"
+            "protocol": "serial",
+            "sync": {
+                "matrix_state": true
+            }
         },
         "serial": {
-            "driver": "vendor"
+            "driver": "vendor",
+            "pin": "GP0"
         }
     },
     "matrix_pins": {
